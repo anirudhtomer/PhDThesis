@@ -1,0 +1,36 @@
+\section{Joint Model for Time-to-Progression and Longitudinal Outcomes}
+\label{c4:sec:jointmodel}
+Let $T_i^*$ denote the true time of disease progression for the ${i\mbox{-th}}$ patient. Progression is always interval censored ${l_i < T_i^* \leq r_i}$ (Figure~\ref{c4:fig:1}). Here, $r_i$ and $l_i$ denote the time of the last and second last invasive tests, respectively, when patients progress. In non-progressing patients, $l_i$ denotes the time of the last test and ${r_i=\infty}$. Assuming $K$ types of longitudinal outcomes, let $\boldsymbol{y}_{ki}$ denote the ${n_{ki} \times 1}$ longitudinal response vector of the ${k\mbox{-th}}$ outcome, $k \in \{1, \ldots, K\}$. The observed data of all $n$ patients is given by ${\mathcal{A}_n = \{l_i, r_i, \boldsymbol{y}_{1i},\ldots \boldsymbol{y}_{Ki}; i = 1, \ldots, n\}}$.
+
+\subsection{Longitudinal Sub-process}
+To model multiple longitudinal outcomes in a unified framework, a joint model employs individual generalized linear mixed sub-models~\citep{mcculloch2005generalized}. Specifically, the conditional distribution of the $k$-th outcome $\boldsymbol{y}_{ki}$ given a vector of patient-specific random effects $\boldsymbol{b}_{ki}$ is assumed to belong to the exponential family, with linear predictor given by,
+\begin{equation*}
+\label{c4:eq:long_model}
+g_k\big[E\{y_{ki} (t) \mid \boldsymbol{b}_{ki}\}\big] = m_{ki}(t) = \boldsymbol{x}_{ki}^{\top}(t)\boldsymbol{\beta}_{k} + \boldsymbol{z}_{ki}^{\top}(t)\boldsymbol{b}_{ki},
+\end{equation*}
+where $g_k(\cdot)$ denotes a known one-to-one monotonic link function, $y_{ki}(t)$ is the
+value of the ${k\mbox{-th}}$ longitudinal outcome for the ${i\mbox{-th}}$ patient at time $t$, and $\boldsymbol{x}_{ki}(t)$ and $\boldsymbol{z}_{ki}(t)$ are the time-dependent design vectors for the fixed $\boldsymbol{\beta}_{k}$ and random effects $\boldsymbol{b}_{ki}$, respectively. To model the correlation between different longitudinal outcomes, we link their corresponding random effects. Specifically, we assume that the vector of random effects ${\boldsymbol{b}_{i} = (\boldsymbol{b}_{1i}^{\top}, \ldots, \boldsymbol{b}_{Ki}^{\top})^{\top}}$ follows a multivariate normal distribution with mean zero and variance-covariance matrix $W$.
+
+\subsection{Survival Sub-process}
+\label{c4:subsec:surival_sub_model}
+In the survival sub-process, the hazard of progression $h_i(t)$ at a time $t$ is assumed to depend on a function of patient and outcome-specific linear predictors $m_{ki}(t)$ and/or the random effects,
+\begin{equation*}
+\label{c4:eq:rel_risk_model}
+\begin{split}
+h_i\big\{t \mid \mathcal{M}_i(t), \boldsymbol{w}_i(t)\big\} &= h_0(t) \exp\Big[\boldsymbol{\gamma}^{\top}\boldsymbol{w}_i(t)\\ & \quad + \sum_{k=1}^{K} f_{k} \big\{ \mathcal{M}_{ki}(t), \boldsymbol{w}_i(t), \boldsymbol{b}_{ki}, \boldsymbol{\alpha}_{k} \big\}\Big], \quad t>0,
+\end{split}
+\end{equation*}
+where $h_0(\cdot)$ denotes the baseline hazard, $\mathcal{M}_{ki}(t)=\{m_{ki}(s) \mid 0 \leq s < t \}$ is the history of the ${k\mbox{-th}}$ longitudinal process up to $t$, and $\boldsymbol{w}_i(t)$ is a vector of exogenous, possibly time-varying covariates with regression coefficients $\boldsymbol{\gamma}$. Functions $f_{k}(\cdot)$, parameterized by vector of coefficients $\boldsymbol{\alpha_{k}}$, specify the features of each longitudinal outcome that are included in the linear predictor of the relative-risk model~\citep{brown2009assessing,rizopoulos2012joint,taylor2013real}. Some examples, motivated by the literature (subscripts $k$ dropped for brevity), are,
+\begin{eqnarray*}
+\left \{
+\begin{array}{l}
+f\big\{\mathcal{M}_{i}(t), \boldsymbol{w}_i(t), \boldsymbol{b}_{i}, \boldsymbol{\alpha} \big\} = \alpha m_{i}(t),\\
+f\big\{ \mathcal{M}_{i}(t), \boldsymbol{w}_i(t), \boldsymbol{b}_{i}, \boldsymbol{\alpha}\big\} = \alpha_1 m_{i}(t) + \alpha_2 m'_{i}(t),\quad \text{with}\  m'_{i}(t) = \frac{\mathrm{d}{m_{i}(t)}}{\mathrm{d}{t}}.\\
+\end{array}
+\right.
+\end{eqnarray*}
+These formulations of~$f(\cdot)$ postulate that the hazard of progression at time~$t$ may depend on underlying level~$m_i(t)$ of the longitudinal outcome at~$t$, or on both the level and velocity~$m'_i(t)$ (e.g., PSA value and velocity in prostate cancer) of the outcome at~$t$. Lastly, the baseline hazard~$h_0(t)$ is modeled flexibly using P-splines~\citep{eilers1996flexible}. Lastly,~$h_0(t)$ is the baseline hazard at time~$t$, and is modeled flexibly using P-splines~\citep{eilers1996flexible}. More specifically:
+\begin{equation*}
+\log{h_0(t)} = \gamma_{h_0,0} + \sum_{q=1}^Q \gamma_{h_0,q} B_q(t, \boldsymbol{v}),
+\end{equation*}
+where~$B_q(t, \boldsymbol{v})$ denotes the~$q$-th basis function of a B-spline with knots~$\boldsymbol{v} = v_1, \ldots, v_Q$ and vector of spline coefficients~$\gamma_{h_0}$. To avoid choosing the number and position of knots in the spline, a relatively high number of knots (e.g., 15 to 20) are chosen and the corresponding B-spline regression coefficients~$\gamma_{h_0}$ are penalized using a differences penalty~\citep{eilers1996flexible}. The joint parameter estimation of the longitudinal and relative-risk sub-models using the Bayesian approach are presented in Appendix~\ref{c4:appendix:param_estimation}.

@@ -1,0 +1,149 @@
+\begin{thebibliography}{}
+
+\bibitem[Alagoz et~al., 2010]{alagoz2010operations}
+Alagoz, O., Ayer, T., and Erenay, F.~S. (2010).
+\newblock Operations research models for cancer screening.
+\newblock {\em Wiley encyclopedia of operations research and management
+  science}.
+
+\bibitem[Andrinopoulou et~al., 2017]{andrinopoulou2017combined}
+Andrinopoulou, E.-R., Rizopoulos, D., Takkenberg, J.~J., and Lesaffre, E.
+  (2017).
+\newblock Combined dynamic predictions using joint models of two longitudinal
+  outcomes and competing risk data.
+\newblock {\em Statistical methods in medical research}, 26(4):1787--1801.
+
+\bibitem[Balasubramanian and Lagakos, 2003]{balasubramanian2003estimation}
+Balasubramanian, R. and Lagakos, S.~W. (2003).
+\newblock Estimation of a failure time distribution based on imperfect
+  diagnostic tests.
+\newblock {\em Biometrika}, 90(1):171--182.
+
+\bibitem[Bokhorst et~al., 2015]{bokhorst2015compliance}
+Bokhorst, L.~P., Alberts, A.~R., Rannikko, A., Valdagni, R., Pickles, T.,
+  Kakehi, Y., Bangma, C.~H., Roobol, M.~J., and {\relax PRIAS study group}
+  (2015).
+\newblock Compliance rates with the {Prostate Cancer Research International
+  Active Surveillance (PRIAS)} protocol and disease reclassification in
+  noncompliers.
+\newblock {\em European Urology}, 68(5):814--821.
+
+\bibitem[Choi and Hur, 2012]{choi2012screening}
+Choi, S.~E. and Hur, C. (2012).
+\newblock Screening and surveillance for barrett’s esophagus: current issues
+  and future directions.
+\newblock {\em Current opinion in gastroenterology}, 28(4):377.
+
+\bibitem[Coley et~al., 2017]{coley2017}
+Coley, R.~Y., Zeger, S.~L., Mamawala, M., Pienta, K.~J., and Carter, H.~B.
+  (2017).
+\newblock Prediction of the pathologic {Gleason} score to inform a personalized
+  management program for prostate cancer.
+\newblock {\em European Urology}, 72(1):135--141.
+
+\bibitem[Denton, 2018]{denton2018optimization}
+Denton, B.~T. (2018).
+\newblock Optimization of sequential decision making for chronic diseases: From
+  data to decisions.
+\newblock In {\em Recent Advances in Optimization and Modeling of Contemporary
+  Problems}, pages 316--348. INFORMS.
+
+\bibitem[Henderson et~al., 2011]{henderson2011surveillance}
+Henderson, L., Nankivell, B., and Chapman*, J. (2011).
+\newblock Surveillance protocol kidney transplant biopsies: their evolving role
+  in clinical practice.
+\newblock {\em American Journal of Transplantation}, 11(8):1570--1575.
+
+\bibitem[Krist et~al., 2007]{krist2007timing}
+Krist, A.~H., Jones, R.~M., Woolf, S.~H., Woessner, S.~E., Merenstein, D.,
+  Kerns, J.~W., Foliaco, W., and Jackson, P. (2007).
+\newblock Timing of repeat colonoscopy: disparity between guidelines and
+  endoscopists’ recommendation.
+\newblock {\em American journal of preventive medicine}, 33(6):471--478.
+
+\bibitem[Loeb et~al., 2013]{loeb2013systematic}
+Loeb, S., Vellekoop, A., Ahmed, H.~U., Catto, J., Emberton, M., Nam, R.,
+  Rosario, D.~J., Scattoni, V., and Lotan, Y. (2013).
+\newblock Systematic review of complications of prostate biopsy.
+\newblock {\em European Urology}, 64(6):876--892.
+
+\bibitem[L{\'o}pez-Rat{\'o}n et~al., 2014]{lopez2014optimalcutpoints}
+L{\'o}pez-Rat{\'o}n, M., Rodr{\'\i}guez-{\'A}lvarez, M.~X., Cadarso-Su{\'a}rez,
+  C., and Gude-Sampedro, F. (2014).
+\newblock {OptimalCutpoints: an R package for selecting optimal cutpoints in
+  diagnostic tests}.
+\newblock {\em Journal of Statistical Software}, 61(8):1--36.
+
+\bibitem[McWilliams et~al., 2008]{mcwilliams2008surveillance}
+McWilliams, T.~J., Williams, T.~J., Whitford, H.~M., and Snell, G.~I. (2008).
+\newblock Surveillance bronchoscopy in lung transplant recipients: risk versus
+  benefit.
+\newblock {\em The Journal of Heart and Lung Transplantation},
+  27(11):1203--1209.
+
+\bibitem[Putter et~al., 2007]{putter2007tutorial}
+Putter, H., Fiocco, M., and Geskus, R.~B. (2007).
+\newblock Tutorial in biostatistics: competing risks and multi-state models.
+\newblock {\em Statistics in medicine}, 26(11):2389--2430.
+
+\bibitem[Rizopoulos, 2012]{rizopoulos2012joint}
+Rizopoulos, D. (2012).
+\newblock {\em Joint Models for Longitudinal and Time-to-Event Data: With
+  Applications in R}.
+\newblock CRC Press.
+
+\bibitem[Rizopoulos et~al., 2017]{rizopoulos2017dynamic}
+Rizopoulos, D., Molenberghs, G., and Lesaffre, E.~M. (2017).
+\newblock Dynamic predictions with time-dependent covariates in survival
+  analysis using joint modeling and landmarking.
+\newblock {\em Biometrical Journal}, 59(6):1261--1276.
+
+\bibitem[Robert, 2007]{robertBayesianChoice}
+Robert, C. (2007).
+\newblock {\em The {Bayesian} choice: from decision-theoretic foundations to
+  computational implementation}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Rodriguez, 2008]{rodriguez2008restful}
+Rodriguez, A. (2008).
+\newblock Restful web services: The basics.
+\newblock {\em IBM developerWorks}, 33:18.
+
+\bibitem[Sassi, 2006]{sassi2006calculating}
+Sassi, F. (2006).
+\newblock Calculating qalys, comparing qaly and daly calculations.
+\newblock {\em Health policy and planning}, 21(5):402--408.
+
+\bibitem[Steimle and Denton, 2017]{steimle2017markov}
+Steimle, L.~N. and Denton, B.~T. (2017).
+\newblock Markov decision processes for screening and treatment of chronic
+  diseases.
+\newblock In {\em Markov Decision Processes in Practice}, pages 189--222.
+  Springer.
+
+\bibitem[Sunberg and Kochenderfer, 2018]{sunberg2018online}
+Sunberg, Z.~N. and Kochenderfer, M.~J. (2018).
+\newblock Online algorithms for pomdps with continuous state, action, and
+  observation spaces.
+\newblock In {\em Twenty-Eighth International Conference on Automated Planning
+  and Scheduling}.
+
+\bibitem[Tsiatis and Davidian, 2004]{tsiatis2004joint}
+Tsiatis, A.~A. and Davidian, M. (2004).
+\newblock Joint modeling of longitudinal and time-to-event data: an overview.
+\newblock {\em Statistica Sinica}, 14(3):809--834.
+
+\bibitem[Vickers and Elkin, 2006]{vickers2006decision}
+Vickers, A.~J. and Elkin, E.~B. (2006).
+\newblock Decision curve analysis: a novel method for evaluating prediction
+  models.
+\newblock {\em Medical Decision Making}, 26(6):565--574.
+
+\bibitem[Vickers et~al., 2014]{vickers2014commentary}
+Vickers, A.~J., Thompson, I.~M., Klein, E., Carroll, P.~R., and Scardino, P.~T.
+  (2014).
+\newblock A commentary on psa velocity and doubling time for clinical decisions
+  in prostate cancer.
+\newblock {\em Urology}, 83(3):592--598.
+
+\end{thebibliography}

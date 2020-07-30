@@ -1,0 +1,91 @@
+\section{Personalized Schedules for Repeat Biopsies}
+\label{c2:sec:pers_sched_approaches}
+We intend to use the joint model fitted to~$\mathcal{D}_n$, to create personalized schedules of biopsies. To this end, let us assume that a schedule is to be created for a new patient~$j$, who is not present in~$\mathcal{D}_n$. Let~$t$ be the time of his latest biopsy, and~$\mathcal{Y}_j(s)$ denote his historical PSA measurements up to time~$s$. The goal is to find the optimal time~$u > \mbox{max}(t,s)$ of the next biopsy.
+
+\subsection{Posterior Predictive Distribution for Time to GR}
+\label{c2:subsec:ppd_time_to_GR}
+The information from~$\mathcal{Y}_j(s)$ and repeat biopsies is manifested by the posterior predictive distribution~$g(T^*_j)$, given by (baseline covariates~$\boldsymbol{w}_i$ are not shown for brevity hereafter):
+\begin{equation*}
+\label{c2:eq:dyn_dist_fail_time}
+\begin{split}
+g(T^*_j) &= p\big\{T^*_j \mid T^*_j > t, \mathcal{Y}_j(s), \mathcal{D}_n\big\}\\
+&= \int p\big\{T^*_j \mid T^*_j > t, \mathcal{Y}_j(s), \boldsymbol{\theta}\big\}p\big(\boldsymbol{\theta} \mid \mathcal{D}_n\big) \mathrm{d} \boldsymbol{\theta}\\
+&= \int \int p\big(T^*_j \mid T^*_j > t, \boldsymbol{b}_j, \boldsymbol{\theta}\big)p\big\{\boldsymbol{b}_j \mid T^*_j>t, \mathcal{Y}_j(s), \boldsymbol{\theta}\big\}p\big(\boldsymbol{\theta} \mid \mathcal{D}_n\big) \mathrm{d} \boldsymbol{b}_j \mathrm{d} \boldsymbol{\theta}.
+\end{split}
+\end{equation*}
+The distribution~$g(T^*_j)$ depends on~$\mathcal{Y}_j(s)$ and~$\mathcal{D}_n$ via the posterior distribution of random effects~$\boldsymbol{b}_j$ and posterior distribution of the vector of all parameters~$\boldsymbol{\theta}$, respectively.
+
+
+\subsection{Loss Functions}
+\label{c2:subsec:loss_functions}
+To find the time~$u$ of the next biopsy, we use principles from statistical decision theory in a Bayesian setting~\citep{bergerDecisionTheory,robertBayesianChoice}. More specifically, we propose to choose~$u$ by minimizing the posterior expected loss~$E_g\big\{L(T^*_j, u)\big\}$, where the expectation is taken with respect to~$g(T^*_j)$. The former is given by:
+\begin{equation*}
+E_g\big\{L(T^*_j, u)\big\} = \int_t^\infty L(T^*_j, u) p\big\{T^*_j \mid T^*_j > t, \mathcal{Y}_j(s), \mathcal{D}_n\big\} \mathrm{d} T^*_j.
+\end{equation*}
+Various loss functions~$L(T^*_j, u)$ have been proposed in literature~\citep{robertBayesianChoice}. The ones we utilize, and the corresponding motivations are presented next.
+
+Given the burden of biopsies, ideally only one biopsy performed at the exact time of GR is sufficient. Hence, neither a time which overshoots the true GR time~$T^*_j$, nor a time which undershoots it, is preferred. In this regard, the squared loss function~$L(T^*_j, u) = (T^*_j - u)^2$ and the absolute loss function~$L(T^*_j, u) = \left|{T^*_j - u}\right|$ have the properties that the posterior expected loss is symmetric on both sides of~$T^*_j$. Secondly, both loss functions have well known solutions available. The posterior expected loss for the squared loss function is given by:
+\begin{equation}
+\label{c2:eq:posterior_squared_loss}
+\begin{split}
+E_g\big\{L(T^*_j, u)\big\} &= E_g\big\{(T^*_j - u)^2\big\}\\
+&=E_g\big\{(T^*_j)^2\big\} + u^2 -2uE_g(T^*_j).
+\end{split}
+\end{equation}
+The posterior expected loss in (\ref{c2:eq:posterior_squared_loss}) attains its minimum at~$u = E_g(T^*_j)$, that is, the expected time of GR. The posterior expected loss for the absolute loss function is given by:
+\begin{equation}
+\label{c2:eq:posterior_absolute_loss}
+\begin{split}
+E_g\big\{L(T^*_j, u)\big\} &= E_g\big(\left|{T^*_j - u}\right|\big)\\
+&= \int_u^\infty (T^*_j - u) g(T^*_j)\mathrm{d} T^*_j + \int_t^u (u - T^*_j) g(T^*_j)\mathrm{d} T^*_j.
+\end{split}
+\end{equation}
+The posterior expected loss in (\ref{c2:eq:posterior_absolute_loss}) attains its minimum at~$u=\mbox{median}_g(T^*_j)$, that is, the median time of GR. It can also be expressed as~$\pi_j^{-1}(0.5 \mid t,s)$, where~$\pi_j^{-1}(\cdot)$ is the inverse of dynamic survival probability~$\pi_j(u \mid t, s)$ of patient~$j$~\citep{rizopoulos2011dynamic}. It is given by:
+\begin{equation*}
+\label{c2:eq:dynamic_surv_prob}
+\pi_j(u \mid t, s) = \mbox{Pr}\big\{T^*_j \geq u \mid  T^*_j >t, \mathcal{Y}_j(s), D_n\big\}, \quad u \geq t.
+\end{equation*}
+
+Even though~$E_g(T^*_j)$ or~$\mbox{median}_g(T^*_j)$ may be obvious choices from a statistical perspective, from the viewpoint of doctors or patients, it could be more intuitive to make the decision for the next biopsy by placing a cutoff~$1 - \kappa$, where~$0 \leq \kappa \leq 1$, on the dynamic incidence/risk of GR. This approach would be successful if~$\kappa$ can sufficiently well differentiate between patients who will obtain GR in a given period of time versus others. This approach is also useful when patients are apprehensive about delaying biopsies beyond a certain risk cutoff. Thus, a biopsy can be scheduled at a time point~$u$ such that the dynamic risk of GR is higher than a certain threshold~$1 - \kappa$ beyond~$u$. To this end, the posterior expected loss for the following multilinear loss function can be minimized to find the optimal~$u$:
+\begin{equation*}
+\label{c2:eq:loss_dynamic_risk}
+L_{k_1, k_2}(T^*_j, u) =
+    \begin{cases}
+      k_2(T^*_j-u), k_2>0 & \text{if } T^*_j > u,\\
+      k_1(u-T^*_j), k_1>0 & \text{otherwise},
+    \end{cases}       
+\end{equation*}
+where~$k_1, k_2$ are constants parameterizing the loss function. The posterior expected loss~$E_g\big\{L_{k_1, k_2}(T^*_j, u)\big\}$ obtains its minimum at~$u = \pi_j^{-1}\big\{k_1/{(k_1 + k_2)} \mid t,s \big\}$~\citep{robertBayesianChoice}. The choice of the two constants~$k_1$ and~$k_2$ is equivalent to the choice of~$\kappa = {k_1}/{(k_1 + k_2)}$.
+
+In practice, for some patients, we may not have sufficient information to estimate their PSA profile accurately. The resulting high variance of~$g(T^*_j)$ could lead to a mean (or median) time of GR, which overshoots the true~$T_j^*$ by a big margin. In such cases, the approach based on the dynamic risk of GR with smaller risk thresholds is more risk-averse. It thus could be more robust to large overshooting margins. This consideration leads us to a hybrid approach, namely, to select~$u$ using the dynamic risk of GR based approach when the spread of~$g(T_j^*)$ is large, while using~$E_g(T^*_j)$ or~$\mbox{median}_g(T^*_j)$ when the spread of~$g(T_j^*)$ is small. What constitutes a large spread will be application-specific. In PRIAS, within the first ten years, the maximum possible delay in detection of GR is three years. Thus we propose that if the difference between the 0.025 quantile of~$g(T^*_j)$, and~$E_g(T^*_j)$ or~$\mbox{median}_g(T^*_j)$ is more than three years, then proposals based on the dynamic risk of GR be used instead.
+
+\subsection{Estimation}
+\label{c2:subsec:estimation}
+Since there is no closed form solution available for~$E_g(T^*_j)$, for its estimation we utilize the following relationship between~$E_g(T^*_j)$ and~$\pi_j(u \mid t, s)$:
+\begin{equation}
+\label{c2:eq:expected_time_survprob}
+E_g(T^*_j) = t + \int_t^\infty \pi_j(u \mid t, s) \mathrm{d} u.
+\end{equation}
+However, as mentioned earlier, selection of the optimal biopsy time based on~$E_g(T_j^*)$ alone will not be practically useful when the~$\mbox{var}_g(T^*_j)$ is large, which is given by:
+\begin{equation}
+\label{c2:eq:var_time_survprob}
+\mbox{var}_g(T^*_j) = 2 \int_t^\infty {(u-t) \pi_j(u \mid t, s) \mathrm{d} u} - \Big\{\int_t^\infty \pi_j(u \mid t, s) \mathrm{d} u\Big\}^2.
+\end{equation}
+Since there is no closed form solution available for the integrals in (\ref{c2:eq:expected_time_survprob}) and (\ref{c2:eq:var_time_survprob}), we approximate them using Gauss-Kronrod quadrature. The variance depends both on the last biopsy time~$t$ and the PSA history~$\mathcal{Y}_j(s)$, as demonstrated in Section~\ref{c2:subsec:demo_prias_pers_schedule}.
+
+For schedules based on the dynamic risk of GR, the choice of threshold~$\kappa$ has important consequences because it dictates the timing of biopsies. Often it may depend on the amount of risk that is acceptable to the patient (if the maximum acceptable risk is 5\%,~$\kappa = 0.95$). When~$\kappa$ cannot be chosen based on the input of the patients, we propose to automate its choice. More specifically, given the time~$t$ of the latest biopsy, we propose to choose a~$\kappa$ for which a binary classification accuracy measure~\citep{lopez2014optimalcutpoints}, discriminating between cases (patients who experience GR) and controls, is maximized. In joint models, a patient~$j$ is predicted to be a case in the time window~$\Delta t$ if~$\pi_j(t + \Delta t \mid t,s) \leq \kappa$, or a control if~$\pi_j(t + \Delta t \mid t,s) > \kappa$~\citep*{rizopoulosJMbayes, landmarking2017}. We choose~$\Delta t$ to be one year. This is because, in AS programs at any point in time, it is of interest to identify and provide extra attention to patients who may obtain GR in the next one year. As for the choice of the binary classification accuracy measure, we chose~$\mbox{F}_1$ score since it is in line with our goal to focus on potential cases in time window~$\Delta t$. The~$\mbox{F}_1$ score combines both sensitivity and positive predictive value (PPV) and is defined as:
+\begin{align*}
+\mbox{F}_1(t, \Delta t, s, \kappa) &= 2\frac{\mbox{TPR}(t, \Delta t, s, \kappa)\ \mbox{PPV}(t, \Delta t, s, \kappa)}{\mbox{TPR}(t, \Delta t, s, \kappa) + \mbox{PPV}(t, \Delta t, s, \kappa)},\\
+\mbox{TPR}(t, \Delta t, s, \kappa) &= \mbox{Pr}\big\{\pi_j(t + \Delta t \mid t,s) \leq \kappa \mid t < T^*_j \leq t + \Delta t\big\},\\
+\mbox{PPV}(t, \Delta t, s, \kappa) &= \mbox{Pr}\big\{t < T^*_j \leq t + \Delta t \mid \pi_j(t + \Delta t \mid t,s) \leq \kappa \big\},
+\end{align*}
+where~$\mbox{TPR}(\cdot)$ and~$\mbox{PPV}(\cdot)$ denote time-dependent true positive rate (sensitivity) and positive predictive value (precision), respectively. The estimation for both is similar to the estimation of~$\mbox{AUC}(t, \Delta t, s)$ given by~\citet{landmarking2017}. Since a high~$\mbox{F}_1$ score is desired, the corresponding value of~$\kappa$ is~$\argmax_{\kappa} \mbox{F}_1(t, \Delta t, s, \kappa)$. We compute the latter using a grid search approach. That is, first, the~$\mbox{F}_1$ score is computed using the available dataset over a fine grid of~$\kappa$ values between 0 and 1, and then~$\kappa$ corresponding to the highest~$\mbox{F}_1$ score is chosen. Furthermore, in this paper, we use~$\kappa$ chosen only based on the~$\mbox{F}_1$ score.
+
+\subsection{Algorithm}
+\label{c2:subsec:pers_sched_algorithm}
+When a biopsy gets scheduled at a time~$u < T^*_j$, then GR is not detected at~$u$, and at least one more biopsy is required at an optimal time~$u^{new} > \mbox{max}(u,s)$. This process is repeated until GR is detected. To aid in medical decision making, we elucidate this process via an algorithm in Figure~\ref{c2:fig:1}. AS programs strongly advise that two biopsies have a gap of at least one year. Thus, when~$u - t < 1$, the algorithm postpones~$u$ to~$t + 1$ because it is the time nearest to~$u$, at which the one-year gap condition is satisfied.
+\begin{figure}
+\input{contents/c2/images/c2_fig1}
+\caption{\textbf{Algorithm for creating a personalized schedule} for patient~$j$. The time of the latest biopsy is denoted by~$t$. The time of the latest available PSA measurement is denoted by~$s$. The proposed personalized time of biopsy is denoted by~$u$. The time at which a repeat biopsy was proposed on the last visit to the hospital is denoted by~$u^{pv}$. The time of the next visit for the measurement of PSA is denoted by~$s^{nv}$.} 
+\label{c2:fig:1}
+\end{figure}

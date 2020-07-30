@@ -1,0 +1,256 @@
+\begin{thebibliography}{}
+
+\bibitem[Alagoz et~al., 2010]{alagoz2010operations}
+Alagoz, O., Ayer, T., and Erenay, F.~S. (2010).
+\newblock Operations research models for cancer screening.
+\newblock {\em Wiley Encyclopedia of Operations Research and Management
+  Science}.
+
+\bibitem[Andrinopoulou and Rizopoulos, 2016]{andrinopoulou2016bayesian}
+Andrinopoulou, E.-R. and Rizopoulos, D. (2016).
+\newblock Bayesian shrinkage approach for a joint model of longitudinal and
+  survival outcomes assuming different association structures.
+\newblock {\em Statistics in Medicine}, 35(26):4813--4823.
+
+\bibitem[Balasubramanian and Lagakos, 2003]{balasubramanian2003estimation}
+Balasubramanian, R. and Lagakos, S.~W. (2003).
+\newblock Estimation of a failure time distribution based on imperfect
+  diagnostic tests.
+\newblock {\em Biometrika}, 90(1):171--182.
+
+\bibitem[Bebu and Lachin, 2017]{bebu2017optimal}
+Bebu, I. and Lachin, J.~M. (2017).
+\newblock Optimal screening schedules for disease progression with application
+  to diabetic retinopathy.
+\newblock {\em Biostatistics}, 19(1):1--13.
+
+\bibitem[Bokhorst et~al., 2015]{bokhorst2015compliance}
+Bokhorst, L.~P., Alberts, A.~R., Rannikko, A., Valdagni, R., Pickles, T.,
+  Kakehi, Y., Bangma, C.~H., Roobol, M.~J., and {\relax PRIAS study group}
+  (2015).
+\newblock Compliance rates with the {Prostate Cancer Research International
+  Active Surveillance (PRIAS)} protocol and disease reclassification in
+  noncompliers.
+\newblock {\em European Urology}, 68(5):814--821.
+
+\bibitem[Brown, 2009]{brown2009assessing}
+Brown, E.~R. (2009).
+\newblock Assessing the association between trends in a biomarker and risk of
+  event with an application in pediatric {HIV/AIDS}.
+\newblock {\em The Annals of Applied Statistics}, 3(3):1163--1182.
+
+\bibitem[Coley et~al., 2017]{coley2017prediction}
+Coley, R.~Y., Zeger, S.~L., Mamawala, M., Pienta, K.~J., and Carter, H.~B.
+  (2017).
+\newblock Prediction of the pathologic {Gleason} score to inform a personalized
+  management program for prostate cancer.
+\newblock {\em European Urology}, 72(1):135--141.
+
+\bibitem[Cook and Wong, 1994]{cook1994equivalence}
+Cook, R.~D. and Wong, W.~K. (1994).
+\newblock On the equivalence of constrained and compound optimal designs.
+\newblock {\em Journal of the American Statistical Association},
+  89(426):687--692.
+
+\bibitem[De~Boor, 1978]{de1978practical}
+De~Boor, C. (1978).
+\newblock {\em A practical guide to splines}, volume~27.
+\newblock Springer-Verlag New York.
+
+\bibitem[de~Carvalho et~al., 2017a]{carvalho}
+de~Carvalho, T.~M., Heijnsdijk, E.~A., and de~Koning, H.~J. (2017a).
+\newblock Estimating the risks and benefits of active surveillance protocols
+  for prostate cancer: a microsimulation study.
+\newblock {\em BJU International}, 119(4):560--566.
+
+\bibitem[de~Carvalho et~al., 2017b]{de2017should}
+de~Carvalho, T.~M., Heijnsdijk, E.~A., and de~Koning, H.~J. (2017b).
+\newblock When should active surveillance for prostate cancer stop if no
+  progression is detected?
+\newblock {\em The Prostate}, 77(9):962--969.
+
+\bibitem[Eilers and Marx, 1996]{eilers1996flexible}
+Eilers, P.~H. and Marx, B.~D. (1996).
+\newblock Flexible smoothing with {B-splines} and penalties.
+\newblock {\em Statistical Science}, 11(2):89--121.
+
+\bibitem[Epstein et~al., 2016]{epsteinGG2014}
+Epstein, J.~I., Egevad, L., Amin, M.~B., Delahunt, B., Srigley, J.~R., and
+  Humphrey, P.~A. (2016).
+\newblock The 2014 international society of urological pathology ({ISUP})
+  consensus conference on {Gleason} grading of prostatic carcinoma.
+\newblock {\em The American Journal of Surgical Pathology}, 40(2):244--252.
+
+\bibitem[Inoue et~al., 2018]{inoue2018comparative}
+Inoue, L.~Y., Lin, D.~W., Newcomb, L.~F., Leonardson, A.~S., Ankerst, D.,
+  Gulati, R., Carter, H.~B., Trock, B.~J., Carroll, P.~R., Cooperberg, M.~R.,
+  et~al. (2018).
+\newblock Comparative analysis of biopsy upgrading in four prostate cancer
+  active surveillance cohorts.
+\newblock {\em Annals of Internal Medicine}, 168(1):1--9.
+
+\bibitem[Jullion and Lambert, 2007]{jullion2007robust}
+Jullion, A. and Lambert, P. (2007).
+\newblock Robust specification of the roughness penalty prior distribution in
+  spatially adaptive bayesian p-splines models.
+\newblock {\em Computational Statistics \& Data Analysis}, 51(5):2542--2558.
+
+\bibitem[Krist et~al., 2007]{krist2007timing}
+Krist, A.~H., Jones, R.~M., Woolf, S.~H., Woessner, S.~E., Merenstein, D.,
+  Kerns, J.~W., Foliaco, W., and Jackson, P. (2007).
+\newblock Timing of repeat colonoscopy: disparity between guidelines and
+  endoscopists’ recommendation.
+\newblock {\em American Journal of Preventive Medicine}, 33(6):471--478.
+
+\bibitem[Lang and Brezger, 2004]{lang2004bayesian}
+Lang, S. and Brezger, A. (2004).
+\newblock Bayesian p-splines.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  13(1):183--212.
+
+\bibitem[Le~Clercq et~al., 2015]{LeClercq2015325}
+Le~Clercq, C., Winkens, B., Bakker, C., Keulen, E., Beets, G., Masclee, A., and
+  Sanduleanu, S. (2015).
+\newblock Metachronous colorectal cancers result from missed lesions and
+  non-compliance with surveillance.
+\newblock {\em Gastrointestinal Endoscopy}, 82(2):325--333.e2.
+
+\bibitem[Loeb et~al., 2014a]{loeb2014overdiagnosis}
+Loeb, S., Bjurlin, M.~A., Nicholson, J., Tammela, T.~L., Penson, D.~F., Carter,
+  H.~B., Carroll, P., and Etzioni, R. (2014a).
+\newblock Overdiagnosis and overtreatment of prostate cancer.
+\newblock {\em European Urology}, 65(6):1046--1055.
+
+\bibitem[Loeb et~al., 2014b]{loeb2014heterogeneity}
+Loeb, S., Carter, H.~B., Schwartz, M., Fagerlin, A., Braithwaite, R.~S., and
+  Lepor, H. (2014b).
+\newblock Heterogeneity in active surveillance protocols worldwide.
+\newblock {\em Reviews in Urology}, 16(4):202--203.
+
+\bibitem[Loeb et~al., 2013]{loeb2013systematic}
+Loeb, S., Vellekoop, A., Ahmed, H.~U., Catto, J., Emberton, M., Nam, R.,
+  Rosario, D.~J., Scattoni, V., and Lotan, Y. (2013).
+\newblock Systematic review of complications of prostate biopsy.
+\newblock {\em European Urology}, 64(6):876--892.
+
+\bibitem[McCulloch and Neuhaus, 2005]{mcculloch2005generalized}
+McCulloch, C.~E. and Neuhaus, J.~M. (2005).
+\newblock Generalized linear mixed models.
+\newblock {\em Encyclopedia of Biostatistics}, 4.
+
+\bibitem[McWilliams et~al., 2008]{mcwilliams2008surveillance}
+McWilliams, T.~J., Williams, T.~J., Whitford, H.~M., and Snell, G.~I. (2008).
+\newblock Surveillance bronchoscopy in lung transplant recipients: risk versus
+  benefit.
+\newblock {\em The Journal of Heart and Lung Transplantation},
+  27(11):1203--1209.
+
+\bibitem[Rizopoulos, 2012]{rizopoulos2012joint}
+Rizopoulos, D. (2012).
+\newblock {\em Joint Models for Longitudinal and Time-to-Event Data: With
+  Applications in R}.
+\newblock CRC Press.
+
+\bibitem[Rizopoulos, 2016]{rizopoulosJMbayes}
+Rizopoulos, D. (2016).
+\newblock The {R} package {JMbayes} for fitting joint models for longitudinal
+  and time-to-event data using {MCMC}.
+\newblock {\em Journal of Statistical Software}, 72(7):1--46.
+
+\bibitem[Rizopoulos et~al., 2017]{landmarking2017}
+Rizopoulos, D., Molenberghs, G., and Lesaffre, E.~M. (2017).
+\newblock Dynamic predictions with time-dependent covariates in survival
+  analysis using joint modeling and landmarking.
+\newblock {\em Biometrical Journal}, 59(6):1261--1276.
+
+\bibitem[Rizopoulos et~al., 2015]{rizopoulos2015personalized}
+Rizopoulos, D., Taylor, J.~M., Van~Rosmalen, J., Steyerberg, E.~W., and
+  Takkenberg, J.~J. (2015).
+\newblock Personalized screening intervals for biomarkers using joint models
+  for longitudinal and survival data.
+\newblock {\em Biostatistics}, 17(1):149--164.
+
+\bibitem[Sassi, 2006]{sassi2006calculating}
+Sassi, F. (2006).
+\newblock Calculating {QALYs}, comparing {QALY} and {DALY} calculations.
+\newblock {\em Health Policy and Planning}, 21(5):402--408.
+
+\bibitem[Steimle and Denton, 2017]{steimle2017markov}
+Steimle, L.~N. and Denton, B.~T. (2017).
+\newblock Markov decision processes for screening and treatment of chronic
+  diseases.
+\newblock In {\em Markov Decision Processes in Practice}, pages 189--222.
+  Springer.
+
+\bibitem[Taylor et~al., 2013]{taylor2013real}
+Taylor, J.~M., Park, Y., Ankerst, D.~P., Proust-Lima, C., Williams, S., Kestin,
+  L., Bae, K., Pickles, T., and Sandler, H. (2013).
+\newblock Real-time individual predictions of prostate cancer recurrence using
+  joint models.
+\newblock {\em Biometrics}, 69(1):206--213.
+
+\bibitem[Tomer et~al., 2020]{tomer2020webapp}
+Tomer, A., Nieboer, D., Roobol, M.~J., Bjartell, A., Steyerberg, E.~W.,
+  Rizopoulos, D., and et~al. (2020).
+\newblock Risk of upgrading based personalized biopsy schedules for prostate
+  cancer active surveillance patients.
+\newblock {\em -}, manuscript submitted to British Journal of Urology
+  International(-):--.
+
+\bibitem[Tomer et~al., 2019a]{tomer2019personalizedbiometrics}
+Tomer, A., Nieboer, D., Roobol, M.~J., Steyerberg, E.~W., and Rizopoulos, D.
+  (2019a).
+\newblock Personalized schedules for surveillance of low-risk prostate cancer
+  patients.
+\newblock {\em Biometrics}, 75(1):153--162.
+
+\bibitem[Tomer et~al., 2019b]{tomer2019personalized}
+Tomer, A., Rizopoulos, D., Nieboer, D., Drost, F.-J., Roobol, M.~J., and
+  Steyerberg, E.~W. (2019b).
+\newblock Personalized decision making for biopsies in prostate cancer active
+  surveillance programs.
+\newblock {\em Medical Decision Making}, 39(5):499--508.
+
+\bibitem[Torre et~al., 2015]{GlobalCancerStats2012}
+Torre, L.~A., Bray, F., Siegel, R.~L., Ferlay, J., Lortet-Tieulent, J., and
+  Jemal, A. (2015).
+\newblock Global cancer statistics, 2012.
+\newblock {\em CA: A Cancer Journal for Clinicians}, 65(2):87--108.
+
+\bibitem[Tsiatis and Davidian, 2004]{tsiatis2004joint}
+Tsiatis, A.~A. and Davidian, M. (2004).
+\newblock Joint modeling of longitudinal and time-to-event data: an overview.
+\newblock {\em Statistica Sinica}, 14(3):809--834.
+
+\bibitem[Turnbull, 1976]{turnbull1976empirical}
+Turnbull, B.~W. (1976).
+\newblock The empirical distribution function with arbitrarily grouped,
+  censored and truncated data.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, 38(3):290--295.
+
+\bibitem[Vickers and Elkin, 2006]{vickers2006decision}
+Vickers, A.~J. and Elkin, E.~B. (2006).
+\newblock Decision curve analysis: a novel method for evaluating prediction
+  models.
+\newblock {\em Medical Decision Making}, 26(6):565--574.
+
+\bibitem[Wang et~al., 2019]{wang2019learning}
+Wang, Y., Zhao, Y.-Q., and Zheng, Y. (2019).
+\newblock Learning-based biomarker-assisted rules for optimized clinical
+  benefit under a risk-constraint.
+\newblock {\em Biometrics}.
+
+\bibitem[Weusten et~al., 2017]{weusten2017endoscopic}
+Weusten, B., Bisschops, R., Coron, E., Dinis-Ribeiro, M., Dumonceau, J.-M.,
+  Esteban, J.-M., Hassan, C., Pech, O., Repici, A., Bergman, J., et~al. (2017).
+\newblock Endoscopic management of {Barrett's} esophagus: {European Society of
+  Gastrointestinal Endoscopy (ESGE)} position statement.
+\newblock {\em Endoscopy}, 49(02):191--198.
+
+\bibitem[WHO et~al., 2014]{world2014global}
+WHO, W. H.~O. et~al. (2014).
+\newblock {\em Global status report on noncommunicable diseases 2014}.
+\newblock Number WHO/NMH/NVI/15.1. World Health Organization.
+
+\end{thebibliography}

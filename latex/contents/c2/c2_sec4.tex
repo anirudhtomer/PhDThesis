@@ -1,0 +1,17 @@
+\section{Evaluation of Schedules}
+\label{c2:sec:choosing_schedule}
+In order to compare various schedules of biopsies, we require measures of their efficacy. We propose to use two measures, namely the number of biopsies (burden) $N^S_j \geq 1$ a schedule $S$ conducts for the $j$-th patient to detect GR, and the offset $O^S_j \geq 0$ by which it overshoots $T^*_j$. The offset $O^S_j$ is defined as $O^S_j = T^S_{j{N^S_j}} - T^*_j$, where $T^S_{j{N^S_j}} \geq T^*_j$ is the time at which GR is detected. Our interest lies in the joint distribution $p(N^S_j, O^S_j)$ of the number of biopsies and the offset. The least burdensome scenario is when $N^S_j=1$ and $O^S=0$. Hence, realistically we should select a schedule with a low mean number of biopsies $E(N^S_j)$ as well a low mean offset $E(O^S_j)$. It is also desired that a schedule has a low variance for both the number of biopsies $\mbox{var}(N^S_j)$ and offset $\mbox{var}(O^S_j)$ so that the schedule works similarly for most patients. 
+
+\subsection{Choosing a Schedule}
+\label{c2:subsec:optimal_schedule}
+Given the multiple schedules of biopsies, it is of clinical interest to choose a suitable schedule. Using principles from compound optimal designs~\citep{lauter1976optimal} we propose to choose a schedule $S$ which minimizes a loss function of the following form:
+\begin{equation}
+\label{c2:eq:loss_func_sim_study_generic}
+L(S) = \sum_{r=1}^R \eta_r \mathcal{R}_r(N^S_j),
+\end{equation}
+where $\mathcal{R}_r(\cdot)$ is a function of either $N^S_j$ or $O^S_j$ (for brevity, only $N^S_j$ is used in the equation above). Some examples of $\mathcal{R}_r(\cdot)$ are mean, median, variance and quantile function. Constants $\eta_1, \ldots, \eta_R$, where $0 \leq \eta_r \leq 1$ and $\sum_{r=1}^R \eta_r = 1$, are weights to differentially weigh-in the contribution of each of the $R$ criteria. An example loss function is:
+\begin{equation}
+\label{c2:eq:loss_func_sim_study}
+L(S) = \eta_1 E(N^S_j) + \eta_2 E(O^S_j).
+\end{equation}
+The choice of $\eta_1$ and $\eta_2$ is not easy, because the burden of a biopsy cannot be compared to a unit increase in offset easily. To obviate this problem we utilize the equivalence between compound and constrained optimal designs~\citep{cook1994equivalence}. More specifically, it can be shown that for any $\eta_1$ and $\eta_2$ there exists a constant $C>0$ for which minimization of the loss function in (\ref{c2:eq:loss_func_sim_study}) is equivalent to minimization of the loss function subject to the constraint that $E(N^S_j) < C$. That is, a schedule which conducts at most $C$ biopsies on average and detects GR earliest should be chosen. The choice of $C$ could be based on the number of biopsies a patient is willing to undergo. In the more generic case in (\ref{c2:eq:loss_func_sim_study_generic}), a schedule can be chosen by minimizing $\mathcal{R}_R(\cdot)$ under the constraint $\mathcal{R}_r(\cdot) < C_r; r=1, \ldots, R-1$.

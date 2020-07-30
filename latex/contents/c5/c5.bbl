@@ -1,0 +1,259 @@
+\begin{thebibliography}{}
+
+\bibitem[Ankerst et~al., 2015]{ankerst2015precision}
+Ankerst, D.~P., Xia, J., Thompson~Jr, I.~M., Hoefler, J., Newcomb, L.~F.,
+  Brooks, J.~D., Carroll, P.~R., Ellis, W.~J., Gleave, M.~E., Lance, R.~S.,
+  et~al. (2015).
+\newblock Precision medicine in active surveillance for prostate cancer:
+  development of the canary--early detection research network active
+  surveillance biopsy risk calculator.
+\newblock {\em European Urology}, 68(6):1083--1088.
+
+\bibitem[Balasubramanian and Lagakos, 2003]{balasubramanian2003estimation}
+Balasubramanian, R. and Lagakos, S.~W. (2003).
+\newblock Estimation of a failure time distribution based on imperfect
+  diagnostic tests.
+\newblock {\em Biometrika}, 90(1):171--182.
+
+\bibitem[Bokhorst et~al., 2015]{bokhorst2015compliance}
+Bokhorst, L.~P., Alberts, A.~R., Rannikko, A., Valdagni, R., Pickles, T.,
+  Kakehi, Y., Bangma, C.~H., Roobol, M.~J., and {\relax {PRIAS} study group}
+  (2015).
+\newblock Compliance rates with the {Prostate Cancer Research International
+  Active Surveillance ({PRIAS})} protocol and disease reclassification in
+  noncompliers.
+\newblock {\em European Urology}, 68(5):814--821.
+
+\bibitem[Bratt et~al., 2013]{bratt2013study}
+Bratt, O., Carlsson, S., Holmberg, E., Holmberg, L., Johansson, E., Josefsson,
+  A., Nilsson, A., Nyberg, M., Robinsson, D., Sandberg, J., et~al. (2013).
+\newblock The study of active monitoring in {Sweden (SAMS)}: a randomized study
+  comparing two different follow-up schedules for active surveillance of
+  low-risk prostate cancer.
+\newblock {\em Scandinavian Journal of Urology}, 47(5):347--355.
+
+\bibitem[Briganti et~al., 2018]{briganti2018active}
+Briganti, A., Fossati, N., Catto, J.~W., Cornford, P., Montorsi, F., Mottet,
+  N., Wirth, M., and Van~Poppel, H. (2018).
+\newblock Active surveillance for low-risk prostate cancer: the {European
+  Association of Urology} position in 2018.
+\newblock {\em European Urology}, 74(3):357--368.
+
+\bibitem[Bruinsma et~al., 2017]{bruinsma2017expert}
+Bruinsma, S.~M., Roobol, M.~J., Carroll, P.~R., Klotz, L., Pickles, T., Moore,
+  C.~M., Gnanapragasam, V.~J., Villers, A., Rannikko, A., Valdagni, R., et~al.
+  (2017).
+\newblock Expert consensus document: semantics in active surveillance for men
+  with localized prostate cancer—results of a modified {Delphi} consensus
+  procedure.
+\newblock {\em Nature Reviews Urology}, 14(5):312.
+
+\bibitem[Bruinsma et~al., 2018]{gap3_2018}
+Bruinsma, S.~M., Zhang, L., Roobol, M.~J., Bangma, C.~H., Steyerberg, E.~W.,
+  Nieboer, D., Van~Hemelrijck, M., consortium, M. F. G. A. P. P. C. A. S.~G.,
+  Trock, B., Ehdaie, B., et~al. (2018).
+\newblock The {Movember} foundation's {GAP3} cohort: a profile of the largest
+  global prostate cancer active surveillance database to date.
+\newblock {\em BJU International}, 121(5):737--744.
+
+\bibitem[Bul et~al., 2013]{bul2013active}
+Bul, M., Zhu, X., Valdagni, R., Pickles, T., Kakehi, Y., Rannikko, A.,
+  Bjartell, A., Van Der~Schoot, D.~K., Cornel, E.~B., Conti, G.~N., et~al.
+  (2013).
+\newblock Active surveillance for low-risk prostate cancer worldwide: the
+  {PRIAS} study.
+\newblock {\em European Urology}, 63(4):597--603.
+
+\bibitem[Chesnut et~al., 2020]{chesnut2019role}
+Chesnut, G.~T., Vertosick, E.~A., Benfante, N., Sjoberg, D.~D., Fainberg, J.,
+  Lee, T., Eastham, J., Laudone, V., Scardino, P., Touijer, K., et~al. (2020).
+\newblock Role of changes in magnetic resonance imaging or clinical stage in
+  evaluation of disease progression for men with prostate cancer on active
+  surveillance.
+\newblock {\em European Urology}, 77(4):501--507.
+
+\bibitem[Coley et~al., 2017]{coley2017prediction}
+Coley, R.~Y., Zeger, S.~L., Mamawala, M., Pienta, K.~J., and Carter, H.~B.
+  (2017).
+\newblock Prediction of the pathologic {Gleason} score to inform a personalized
+  management program for prostate cancer.
+\newblock {\em European Urology}, 72(1):135--141.
+
+\bibitem[Cooperberg et~al., 2018]{cooperberg2018refined}
+Cooperberg, M.~R., Brooks, J.~D., Faino, A.~V., Newcomb, L.~F., Kearns, J.~T.,
+  Carroll, P.~R., Dash, A., Etzioni, R., Fabrizio, M.~D., Gleave, M.~E., et~al.
+  (2018).
+\newblock Refined analysis of prostate-specific antigen kinetics to predict
+  prostate cancer active surveillance outcomes.
+\newblock {\em European Urology}, 74(2):211--217.
+
+\bibitem[De~Boor, 1978]{de1978practical}
+De~Boor, C. (1978).
+\newblock {\em A practical guide to splines}, volume~27.
+\newblock Springer-Verlag New York.
+
+\bibitem[de~Carvalho et~al., 2017a]{de2017estimating}
+de~Carvalho, T.~M., Heijnsdijk, E.~A., and de~Koning, H.~J. (2017a).
+\newblock Estimating the risks and benefits of active surveillance protocols
+  for prostate cancer: a microsimulation study.
+\newblock {\em BJU International}, 119(4):560--566.
+
+\bibitem[de~Carvalho et~al., 2017b]{carvalho2017}
+de~Carvalho, T.~M., Heijnsdijk, E.~A., and de~Koning, H.~J. (2017b).
+\newblock When should active surveillance for prostate cancer stop if no
+  progression is detected?
+\newblock {\em The Prostate}, 77(9):962--969.
+
+\bibitem[Eilers and Marx, 1996]{eilers1996flexible}
+Eilers, P.~H. and Marx, B.~D. (1996).
+\newblock Flexible smoothing with {B-splines} and penalties.
+\newblock {\em Statistical Science}, 11(2):89--121.
+
+\bibitem[Epstein et~al., 2016]{epsteinGG2014}
+Epstein, J.~I., Egevad, L., Amin, M.~B., Delahunt, B., Srigley, J.~R., and
+  Humphrey, P.~A. (2016).
+\newblock The 2014 international society of urological pathology ({ISUP})
+  consensus conference on {Gleason} grading of prostatic carcinoma.
+\newblock {\em The American Journal of Surgical Pathology}, 40(2):244--252.
+
+\bibitem[Inoue et~al., 2018]{inoue2018comparative}
+Inoue, L.~Y., Lin, D.~W., Newcomb, L.~F., Leonardson, A.~S., Ankerst, D.,
+  Gulati, R., Carter, H.~B., Trock, B.~J., Carroll, P.~R., Cooperberg, M.~R.,
+  et~al. (2018).
+\newblock Comparative analysis of biopsy upgrading in four prostate cancer
+  active surveillance cohorts.
+\newblock {\em Annals of Internal Medicine}, 168(1):1--9.
+
+\bibitem[Kasivisvanathan et~al., 2020]{kasivisvanathan2020magnetic}
+Kasivisvanathan, V., Giganti, F., Emberton, M., and Moore, C.~M. (2020).
+\newblock Magnetic resonance imaging should be used in the active surveillance
+  of patients with localised prostate cancer.
+\newblock {\em European Urology}, 77(3):318--319.
+
+\bibitem[Laird et~al., 1982]{laird1982random}
+Laird, N.~M., Ware, J.~H., et~al. (1982).
+\newblock Random-effects models for longitudinal data.
+\newblock {\em Biometrics}, 38(4):963--974.
+
+\bibitem[Lin et~al., 2000]{lin2000latent}
+Lin, H., McCulloch, C.~E., Turnbull, B.~W., Slate, E.~H., and Clark, L.~C.
+  (2000).
+\newblock A latent class mixed model for analysing biomarker trajectories with
+  irregularly scheduled observations.
+\newblock {\em Statistics in Medicine}, 19(10):1303--1318.
+
+\bibitem[Loeb et~al., 2014]{loeb2014heterogeneity}
+Loeb, S., Carter, H.~B., Schwartz, M., Fagerlin, A., Braithwaite, R.~S., and
+  Lepor, H. (2014).
+\newblock Heterogeneity in active surveillance protocols worldwide.
+\newblock {\em Reviews in Urology}, 16(4):202--203.
+
+\bibitem[Loeb et~al., 2013]{loeb2013systematic}
+Loeb, S., Vellekoop, A., Ahmed, H.~U., Catto, J., Emberton, M., Nam, R.,
+  Rosario, D.~J., Scattoni, V., and Lotan, Y. (2013).
+\newblock Systematic review of complications of prostate biopsy.
+\newblock {\em European Urology}, 64(6):876--892.
+
+\bibitem[Makarov et~al., 2007]{makarov2007updated}
+Makarov, D.~V., Trock, B.~J., Humphreys, E.~B., Mangold, L.~A., Walsh, P.~C.,
+  Epstein, J.~I., and Partin, A.~W. (2007).
+\newblock Updated nomogram to predict pathologic stage of prostate cancer given
+  prostate-specific antigen level, clinical stage, and biopsy {Gleason} score
+  ({Partin} tables) based on cases from 2000 to 2005.
+\newblock {\em Urology}, 69(6):1095--1101.
+
+\bibitem[Mottet et~al., 2017]{mottet2017eau}
+Mottet, N., Bellmunt, J., Bolla, M., Briers, E., Cumberbatch, M.~G., De~Santis,
+  M., Fossati, N., Gross, T., Henry, A.~M., Joniau, S., et~al. (2017).
+\newblock Eau-estro-siog guidelines on prostate cancer. part 1: screening,
+  diagnosis, and local treatment with curative intent.
+\newblock {\em European Urology}, 71(4):618--629.
+
+\bibitem[Nieboer et~al., 2018]{nieboer2018active}
+Nieboer, D., Tomer, A., Rizopoulos, D., Roobol, M.~J., and Steyerberg, E.~W.
+  (2018).
+\newblock Active surveillance: a review of risk-based, dynamic monitoring.
+\newblock {\em Translational Andrology and Urology}, 7(1):106--115.
+
+\bibitem[Nixon et~al., 1997]{nixon1997biological}
+Nixon, R.~G., Wener, M.~H., Smith, K.~M., Parson, R.~E., Strobel, S.~A., and
+  Brawer, M.~K. (1997).
+\newblock Biological variation of prostate specific antigen levels in serum: an
+  evaluation of day-to-day physiological fluctuations in a well-defined cohort
+  of 24 patients.
+\newblock {\em The Journal of Urology}, 157(6):2183--2190.
+
+\bibitem[Partin et~al., 1993]{partin1993use}
+Partin, A.~W., Yoo, J., Carter, H.~B., Pearson, J.~D., Chan, D.~W., Epstein,
+  J.~I., and Walsh, P.~C. (1993).
+\newblock The use of prostate specific antigen, clinical stage and {Gleason}
+  score to predict pathological stage in men with localized prostate cancer.
+\newblock {\em The Journal of Urology}, 150(1):110--114.
+
+\bibitem[Pearson et~al., 1994]{pearson1994mixed}
+Pearson, J.~D., Morrell, C.~H., Landis, P.~K., Carter, H.~B., and Brant, L.~J.
+  (1994).
+\newblock Mixed-effects regression models for studying the natural history of
+  prostate disease.
+\newblock {\em Statistics in Medicine}, 13(5-7):587--601.
+
+\bibitem[Rizopoulos, 2012]{rizopoulos2012joint}
+Rizopoulos, D. (2012).
+\newblock {\em Joint Models for Longitudinal and Time-to-Event Data: With
+  Applications in R}.
+\newblock CRC Press.
+
+\bibitem[Rizopoulos, 2016]{rizopoulosJMbayes}
+Rizopoulos, D. (2016).
+\newblock The {R} package {JMbayes} for fitting joint models for longitudinal
+  and time-to-event data using {MCMC}.
+\newblock {\em Journal of Statistical Software}, 72(7):1--46.
+
+\bibitem[Rizopoulos et~al., 2017]{rizopoulos2017dynamic}
+Rizopoulos, D., Molenberghs, G., and Lesaffre, E.~M. (2017).
+\newblock Dynamic predictions with time-dependent covariates in survival
+  analysis using joint modeling and landmarking.
+\newblock {\em Biometrical Journal}, 59(6):1261--1276.
+
+\bibitem[Royston and Altman, 2013]{royston2013external}
+Royston, P. and Altman, D.~G. (2013).
+\newblock External validation of a cox prognostic model: principles and
+  methods.
+\newblock {\em BMC medical research methodology}, 13(1):33.
+
+\bibitem[Schoots et~al., 2015]{schoots2015magnetic}
+Schoots, I.~G., Petrides, N., Giganti, F., Bokhorst, L.~P., Rannikko, A.,
+  Klotz, L., Villers, A., Hugosson, J., and Moore, C.~M. (2015).
+\newblock Magnetic resonance imaging in active surveillance of prostate cancer:
+  a systematic review.
+\newblock {\em European Urology}, 67(4):627--636.
+
+\bibitem[Steyerberg et~al., 2010]{steyerberg2010assessing}
+Steyerberg, E.~W., Vickers, A.~J., Cook, N.~R., Gerds, T., Gonen, M.,
+  Obuchowski, N., Pencina, M.~J., and Kattan, M.~W. (2010).
+\newblock Assessing the performance of prediction models: a framework for some
+  traditional and novel measures.
+\newblock {\em Epidemiology (Cambridge, Mass.)}, 21(1):128.
+
+\bibitem[Tomer et~al., 2019a]{tomer2019}
+Tomer, A., Nieboer, D., Roobol, M.~J., Steyerberg, E.~W., and Rizopoulos, D.
+  (2019a).
+\newblock Personalized schedules for surveillance of low-risk prostate cancer
+  patients.
+\newblock {\em Biometrics}, 75(1):153--162.
+
+\bibitem[Tomer et~al., 2019b]{tomer2019personalized}
+Tomer, A., Rizopoulos, D., Nieboer, D., Drost, F.-J., Roobol, M.~J., and
+  Steyerberg, E.~W. (2019b).
+\newblock Personalized decision making for biopsies in prostate cancer active
+  surveillance programs.
+\newblock {\em Medical Decision Making}, 39(5):499--508.
+
+\bibitem[Turnbull, 1976]{turnbull1976empirical}
+Turnbull, B.~W. (1976).
+\newblock The empirical distribution function with arbitrarily grouped,
+  censored and truncated data.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, 38(3):290--295.
+
+\end{thebibliography}

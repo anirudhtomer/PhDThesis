@@ -1,0 +1,92 @@
+\documentclass[twoside, 12pt, openright, final]{memoir}
+
+%%%%%%%%%%%%%%%%%%
+% For margins etc, our text area has a height of 167.5mm and a width of 130mm
+%%%%%%%%%%%%%%%%%%
+\setstocksize{240mm}{170mm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\settrims{0mm}{0mm}
+\setmarginnotes{0mm}{0mm}{0mm}
+\setlrmarginsandblock{20mm}{20mm}{*}
+\setulmarginsandblock{42.5mm}{30mm}{*}
+\setheadfoot{10mm}{15mm}
+\setheaderspaces{*}{7.5mm}{*}
+\checkandfixthelayout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{censor}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For pagestyle, chapterstyle, bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{ruled}
+\chapterstyle{bianchi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For creating thumb indices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{thumby}
+%\thumbySides{two}
+%\thumbyTotalChapters{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Other packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For equations, the tbtags option puts line numbers at the last line of a multiline equation
+\usepackage[final]{pdfpages}
+\usepackage[tbtags]{amsmath}
+\DeclareMathOperator{\argmax}{arg\,max}
+\DeclareMathOperator{\argmin}{arg\,min}
+%For \url
+\usepackage{hyperref}
+%For colored text
+\usepackage{xcolor}
+\definecolor{GREEN}{RGB}{51, 160, 44}
+
+%For subsection numbering
+\setsecnumdepth{subsection}
+
+%For \includegraphics
+\usepackage{graphicx}
+%For small caption sizes of figures and tables
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+\captionsetup[table]{font=small}
+%For Tikz figure used in the biometrics paper
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\tikzstyle{startstop_big} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black,text width = 8.5cm, fill=red!30]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black,text width = 5cm, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width = 3cm, draw=black, fill=orange!30]
+\tikzstyle{process_wide_3pt5cm} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width = 3.5cm, draw=black, fill=orange!30]
+\tikzstyle{process_wide_4cm} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width = 4cm, draw=black, fill=orange!30]
+\tikzstyle{process_wide_4pt5cm} = [rectangle, minimum width=3cm, minimum height=1cm, text width = 4.5cm, draw=black, fill=orange!30]
+\tikzstyle{process_wide_5cm} = [rectangle, minimum width=3cm, minimum height=1cm, text width = 5cm, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=1cm, minimum height=1cm,text centered,text width = 2.25cm, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+
+%%%%%%%%%%%%%%%%%%
+%For bibliography
+%%%%%%%%%%%%%%%%%%%
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+\renewcommand{\bibname}{References}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Document contents here onwards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\includepdf{propositions.pdf}
+%\includepdf[pages=-]{title_page.pdf}
+\input{contents/frontmatter}
+\input{contents/mainmatter-embargo}
+\input{contents/backmatter-embargo}
+\end{document}

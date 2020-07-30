@@ -1,0 +1,71 @@
+\section{Motivating Studies}
+\label{c1:sec:motivating_studies}
+
+\subsection{PRIAS: Prostate Cancer Research International Active Surveillance}
+\label{c1:subsec:PRIAS}
+Our first motivating study is PRIAS~\citep{bul2013active}, the world's largest ongoing prostate cancer surveillance study for low- and very-low grade prostate cancer patients. More than 100 medical centers from 17 countries contributed to PRIAS, using a common protocol (\url{https://www.prias-project.org}). In PRIAS the state of cancer is evaluated via PSA (ng/mL), a blood test; digital rectal examinations (DRE), indicating the shape and size of the tumor; repeat biopsy Gleason grade group (1 to 5), an invasive test; and recently magnetic resonance imaging (MRI). Among these, the biopsy Gleason grade~\citep{epsteinGG2014} is the strongest indicator of cancer-related outcomes. Consequently, a trigger for treatment in PRIAS is observing an increase in biopsy Gleason grade on repeat biopsy, also informally termed as progression. 
+
+\begin{table}
+\small
+\centering
+\caption{\textbf{Summary of the PRIAS dataset}. The primary event of interest is cancer progression (increase in biopsy Gleason grade group from grade group~1~to~2 or higher). Abbreviations: PSA is prostate-specific antigen; DRE is digital rectal examination, with level T1c~\citep{schroder1992tnm} indicating a clinically inapparent tumor which is not palpable or visible by imaging, whereas tumors with $\mbox{DRE} > \mbox{T1c}$ are palpable; IQR is interquartile range; \#PSA, \#DRE, \#biopsies are the number of PSA, DRE, and biopsies conducted, respectively. Chapters~\ref{c2}~and~\ref{c3} use the December~2016 version of the dataset, but Chapters~\ref{c4}~and~\ref{c5} utilize the updated April~2019 version.}
+\label{c1:table:1}
+\begin{tabular}{p{5cm}rr}
+\toprule
+\textbf{Characteristic} & \textbf{Dec 2016 Version} & \textbf{Apr 2019 Version}\\
+\midrule
+Total patients & 5270 & 7813\\
+\emph{Progression (primary event)}  & 866 & 1134\\
+Treatment  & 1488 & 2250\\
+Watchful waiting  &  179 & 334\\
+Lost to follow-up  & 72 & 203\\
+Discontinued on request   & 8 & 46\\
+Death (other)  & 61 & 95\\
+Death (prostate cancer)  & 2 & 2\\
+\midrule
+Total DRE measurements & 25606 & 37326 \\
+Total PSA measurements  & 46015 & 67578\\
+Total biopsies  & 11042 & 15686\\
+Median age at diagnosis (years)  & 70 (IQR: 65--75) & 66 (IQR: 61--71)\\
+Median PSA (ng/mL)  & 5.6 (IQR: 4.0--7.5) & 5.7 (IQR: 4.1--7.7)\\
+$\mbox{DRE} = \mbox{T1c}$ (\%) & 23538/25606 (92\%) & 34883/37326 (94\%) \\
+\midrule
+Median maximum follow-up per patient (years)  & 1.9 (IQR: 1.0--3.8) &  1.8 (IQR: 0.9--4.0)\\
+Median \#PSA per patient  & 7 (IQR: 5--12) &  6 (IQR: 4--12)\\
+Median \#DRE per patient & 4 (IQR: 3--7) & 4 (IQR: 2--7)\\
+Median \#biopsies per patient  & 2 (IQR: 1--3) &  2 (IQR: 1--2)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Current schedule of biomarkers and biopsies} Upon inclusion in PRIAS, PSA (ng/mL) was measured quarterly for the first two years of follow-up and semiannually after that. The DRE was also measured semiannually. The MRI data on tumor volume was very sparsely available in PRIAS. Hence, in this work, we were unable to use it. Biopsies were scheduled at year one, four, seven, and ten of follow-up. Additional yearly biopsies were scheduled when PSA doubling time was between zero and ten years (Figure~\ref{c1:fig:c1_prias_biopsy_protocol}). The PSA doubling time or PSA-DT is an indicator of the average rate of change of PSA over follow-up. It is measured as the inverse of the slope of the regression line through the base two logarithm of the observed PSA values. Unlike PRIAS's dynamically changing biopsy schedule, in the majority of the prostate cancer surveillance studies worldwide, yearly biopsies are the norm~\citep{loeb2014heterogeneity,nieboer2018active}.
+
+\subsection{Bio-SHiFT: The Role of Biomarkers and Echocardiography in Prediction of Prognosis of Chronic Heart Failure Patients}
+Our second motivating study is called Bio-SHiFT~\citep{van2018toward}, a prospective ongoing study with currently 263 patients followed-up over a period of 30 months. The goal of Bio-SHiFT is to evaluate the performance of blood biomarkers in the prognosis of chronic heart failure. In this thesis, we focused only on one such biomarker, called NT-proBNP~\citep{bhalla2004b}. Measuring NT-proBNP requires only a blood sample, and thus it less burdensome than biopsies or endoscopies. However, when measured repeatedly for the prognosis of heart failure, the overall burden accumulates over time. Currently, NT-proBNP is measured once every three months. Since only 70 out of 263 patients had adverse heart failure related events (cardiac death, cardiac transplantation, left ventricular assist device implantation, or heart failure hospitalization), many patients may not require some of the NT-proBNP measurements prescribed in the fixed schedule. Hence, we aimed to reduce patient burden by providing them a personalized schedule for measuring NT-proBNP. To this end, we used an existing scheduling methodology~\citep{rizopoulos2016personalized}. This approach balances information gained from an extra NT-proBNP measurement and the risk of missing an adverse event if NT-proBNP is not measured.
+
+\begin{table}
+\small
+\centering
+\caption{\textbf{Summary of the Bio-SHiFT dataset}. The primary study endpoint (PE) was defined as the composite of cardiac death, cardiac transplantation, left ventricular assist device implantation, or hospitalization for heart failure, whichever occurred first. Abbreviations: NYHA is New York Heart Association Classification~\citep{bredy2018new}; IQR is interquartile range.}
+\label{c1:table:2}
+\begin{tabular}{p{8cm}r}
+\toprule
+\textbf{Characteristic} & Value\\
+\midrule
+Total patients & 263\\
+\emph{PE (primary endpoint)}  & 70\\
+\midrule
+Total NT-proBNP measurements & 2022\\
+Median NT-proBNP (pg/mL)  & 110.3 (IQR: 38.5--240.9)\\
+Median age at inclusion (years)  & 67.9 (IQR: 58.9--75.8)\\
+Median BMI at inclusion  & 26.5 (IQR: 24.4--30.1)\\
+Median NYHA (assumed continuous) & 2 (IQR: 1--3)\\
+$\mbox{Gender} = \mbox{Female}$ (\%) & 74/263 (28.1\%)\\
+$\mbox{Renal failure history} = \mbox{Yes}$ (\%) & 136/263 (51.7\%)\\
+$\mbox{Type-II diabetes mellitus} = \mbox{Yes}$ (\%) & 81/263 (30.8\%)\\
+\midrule
+Median maximum follow-up per patient (years)  & 2.1 (IQR: 1.2--2.4)\\
+Median \#NT-proBNP per patient  & 9 (IQR: 5--10)\\
+\bottomrule
+\end{tabular}
+\end{table}

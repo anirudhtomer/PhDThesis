@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+\usepackage[paperheight=240mm, paperwidth=170mm, tmargin=0.5in, bmargin=0.5in, rmargin=0.5in, lmargin=0.5in]{geometry}
+
+\title{\textsf{\large Propositions accompanying the thesis:\\}\textsf{\textbf{Personalized Schedules\\for Invasive Diagnostic Tests}}\vspace{-3.75em}}
+\date{}
+\pagenumbering{gobble}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{hindi}
+\newfontfamily\devanagarifont[Script=Devanagari]{Lohit Devanagari}
+
+%https://en.wikipedia.org/wiki/Golden_mean_(philosophy)
+
+\begin{document}
+\maketitle
+\textsf{
+\begin{enumerate}
+    \item A personalized schedule is only as good as the underlying medical data and statistical model. (this thesis)
+    \item Patients and doctors should evaluate the patient-specific estimated expected number of tests and expected time delay in detecting progression before opting for any schedule, be it risk-based personalized, fixed, or Markov decision processes based. (this thesis)
+    \item The choice of the utility function is more important than achieving mathematical optimality. (this thesis)
+    \item Risk-based personalized test decisions based on thresholds obtained from auto-selection indices such as Youden's J or $\mbox{F}_1$-score lead to decisions that do not respect the clinical context. (this thesis)
+    \item Since real-world survival curves truncate at the maximum study period, we can only estimate a restricted version of expected failure time. (this thesis)
+    \item Predictive accuracy on test sets is the criterion for how good the model is. (Leo Breiman); $\ldots$ maybe we should get rid of checking of models and assumptions more often. Then maybe we'd be able to solve some of the problems that the machine learning people can solve but we can't! (Andrew Gelman)
+    \item All statistical analyses should be preceded with graphical exploratory data analysis. (experience with CPO consulting)
+    \item Too many rules create as many outliers; $\ldots$ With four parameters I can fit an elephant, and with five I can make him wiggle his trunk. (John von Neumann)
+    \item Measures of central tendency (e.g., mean, median) in the absence of measures of variability (e.g., range, standard deviation) are an effective tool to lie with statistics.
+    \item It is a capital mistake to theorize before one has data. (Sir Arthur Conan Doyle)
+    \item \texthindi{पहला सुख - निरोगी काया}: A disease-free body is the utmost pleasure of life. (old Hindi adage)
+\end{enumerate}
+}
+
+%You can't fix by analysis what you bungled by design. (Richard J. Light, Judith D. Singer, and John B. Willett)
+
+\begin{flushright}
+\textbf{\textsf{Anirudh Tomer}}
+\end{flushright}
+\end{document}
