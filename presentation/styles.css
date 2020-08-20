@@ -1,7 +1,0 @@
-slides > slide.backdrop {
-  background: white;
-}
-
-slides > slide:not(.nobackground):after {
-  content: ""
-}
